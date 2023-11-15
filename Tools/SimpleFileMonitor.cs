@@ -27,5 +27,6 @@ class CanaryFileMonitor
     private static void OnChanged(object source, FileSystemEventArgs e)
     {
         Console.WriteLine($"Canary file {e.ChangeType}: {e.FullPath}");
+        //This consequence is there just as a proof of concept - but should be substituted with somen more impactful >:)
     }
 }
